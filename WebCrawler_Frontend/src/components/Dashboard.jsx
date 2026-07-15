@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Globe, ArrowLeft, Play, RotateCcw, Settings, Download, FileText } from 'lucide-react';
 import GraphVisualization from './GraphVisualization';
 import CrawlStats from './CrawlStats';
+//import { mockData } from "../data/mockData";
 // import { mockCrawlResponse, largeMockCrawlResponse } from '../data/mockData';
 import axios from 'axios';
 
