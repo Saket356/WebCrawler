@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import { Globe, Network, Eye } from "lucide-react";
+import { Globe, Network, Eye,Zap } from "lucide-react";
 
 const LandingPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
-      {/* Navigation */}
+     
       <nav className="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-md border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
@@ -72,7 +72,101 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
-    </div>
+      
+
+       {/* Hero Features */}
+    <section className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-white mb-4">
+              Powerful Features
+            </h2>
+            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+              Everything you need to understand and analyze web structures
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-gradient-to-br from-black/40 to-black/20 p-8 rounded-2xl border border-white/10 hover:border-white/20 transition-all duration-300 hover:transform hover:scale-105">
+              <div className="w-12 h-12 bg-blue-600/20 rounded-xl flex items-center justify-center mb-6">
+                <Network className="h-6 w-6 text-blue-400" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-4">Interactive Graphs</h3>
+              <p className="text-gray-300">
+                Visualize website structures with dynamic, interactive D3.js powered graphs that show link relationships.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-black/40 to-black/20 p-8 rounded-2xl border border-white/10 hover:border-white/20 transition-all duration-300 hover:transform hover:scale-105">
+              <div className="w-12 h-12 bg-purple-600/20 rounded-xl flex items-center justify-center mb-6">
+                <Zap className="h-6 w-6 text-purple-400" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-4">Fast Crawling</h3>
+              <p className="text-gray-300">
+                Lightning-fast web crawling with real-time progress tracking and performance metrics.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-black/40 to-black/20 p-8 rounded-2xl border border-white/10 hover:border-white/20 transition-all duration-300 hover:transform hover:scale-105">
+              <div className="w-12 h-12 bg-yellow-600/20 rounded-xl flex items-center justify-center mb-6">
+                <Eye className="h-6 w-6 text-yellow-400" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-4">Visual Insights</h3>
+              <p className="text-gray-300">
+                Beautiful visualizations that make complex website structures easy to understand and analyze.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-black/40 to-black/20 p-8 rounded-2xl border border-white/10 hover:border-white/20 transition-all duration-300 hover:transform hover:scale-105">
+              <div className="w-12 h-12 bg-pink-600/20 rounded-xl flex items-center justify-center mb-6">
+                <Globe className="h-6 w-6 text-pink-400" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-4">Multi-Domain</h3>
+              <p className="text-gray-300">
+                Crawl across multiple domains and subdomains to get complete site architecture insights.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+
+          
+   
+    {/* CTA Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="bg-gradient-to-r from-black/40 to-black/20 rounded-3xl p-12 border border-white/10">
+            <h2 className="text-4xl font-bold text-white mb-6">
+              Ready to Explore?
+            </h2>
+            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+              Start crawling and visualizing websites today. Discover hidden structures and gain valuable insights.
+            </p>
+            <Link
+              to="/dashboard"
+              className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-xl font-semibold text-lg transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
+            >
+              Launch Dashboard
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-12 px-4 sm:px-6 lg:px-8 border-t border-white/10">
+        <div className="max-w-7xl mx-auto text-center">
+          <div className="flex items-center justify-center space-x-2 mb-4">
+            <Globe className="h-6 w-6 text-blue-400" />
+            <span className="text-lg font-bold text-white">WebCrawler</span>
+          </div>
+          <p className="text-gray-400">
+            © 2025 WebCrawler. Made by Saket Kumar.
+          </p>
+        </div>
+      </footer>
+       </div>
   );
 };
 
