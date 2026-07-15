@@ -1,9 +1,17 @@
-export default function App() {
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import LandingPage from "./components/LandingPage";
+import Dashboard from "./components/Dashboard";
+
+function App() {
   return (
-    <div className="min-h-screen bg-slate-900 flex items-center justify-center">
-      <h1 className="text-5xl font-bold text-blue-500">
-        WebCrawler
-      </h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
+
+export default App;
