@@ -10,4 +10,7 @@ export const mockData = {
     "https://example.com/contact": "https://example.com",
     "https://example.com/blog": "https://example.com",
   },
+  duration_seconds: 0.42,
+  error: "",
 };
+
